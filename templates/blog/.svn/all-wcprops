@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/!svn/ver/112/dsmm/templates/blog
+END
+page.html
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/!svn/ver/72/dsmm/templates/blog/page.html
+END
+post_list.html
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/112/dsmm/templates/blog/post_list.html
+END
+post.html
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/!svn/ver/70/dsmm/templates/blog/post.html
+END
+post_detail.html
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/112/dsmm/templates/blog/post_detail.html
+END
+post_min.html
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/112/dsmm/templates/blog/post_min.html
+END

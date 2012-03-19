@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/!svn/ver/115/dsmm/templates/imagestore
+END
+image_list.html
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/115/dsmm/templates/imagestore/image_list.html
+END
+album.html
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/74/dsmm/templates/imagestore/album.html
+END
+base.html
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/63/dsmm/templates/imagestore/base.html
+END
+album_list.html
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/74/dsmm/templates/imagestore/album_list.html
+END

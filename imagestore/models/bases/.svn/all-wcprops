@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/73/dsmm/imagestore/models/bases
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/62/dsmm/imagestore/models/bases/__init__.py
+END
+album.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/73/dsmm/imagestore/models/bases/album.py
+END
+image.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/62/dsmm/imagestore/models/bases/image.py
+END

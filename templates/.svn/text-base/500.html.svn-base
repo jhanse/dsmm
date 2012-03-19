@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+{% block title %}
+    Ojebemu (500)
+{% endblock %}
+
+{% block content %}
+
+    <img class="error-ecg" src="{{ STATIC_PREFIX }}img/ecg.png" width="700">
+    <p>Ja kaj te kurac pičko mater. Pač ni te strani. Nea guši.</p>
+{% endblock %}
+
+{% block sidebar %}
+    {% include 'sidebar/sidebar_error.html' %}
+{% endblock %}

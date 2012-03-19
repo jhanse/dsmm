@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/!svn/ver/2/dsmm/static/grappelli/css
+END
+base.css
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/2/dsmm/static/grappelli/css/base.css
+END
+tables.css
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/2/dsmm/static/grappelli/css/tables.css
+END
+buttons.css
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/2/dsmm/static/grappelli/css/buttons.css
+END
+grappelli-skin-basic.css
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/2/dsmm/static/grappelli/css/grappelli-skin-basic.css
+END
+tools.css
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/2/dsmm/static/grappelli/css/tools.css
+END
+reset.css
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/2/dsmm/static/grappelli/css/reset.css
+END
+grappelli-skin-default.css
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/2/dsmm/static/grappelli/css/grappelli-skin-default.css
+END
+structures.css
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/2/dsmm/static/grappelli/css/structures.css
+END
+jquery-ui-grappelli-extensions.css
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/2/dsmm/static/grappelli/css/jquery-ui-grappelli-extensions.css
+END
+components.css
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/2/dsmm/static/grappelli/css/components.css
+END
+admin-tools.css
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/2/dsmm/static/grappelli/css/admin-tools.css
+END
+forms.css
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/2/dsmm/static/grappelli/css/forms.css
+END
+typography.css
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/2/dsmm/static/grappelli/css/typography.css
+END

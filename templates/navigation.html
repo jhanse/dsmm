@@ -1,0 +1,26 @@
+{% load base_extras %}
+
+{% url blog_home as blog_home %}
+{% url pages slug="o-drustvu" as o_drustvu %}
+{% url imagestore:index as foto %}
+{% url pages slug="dejavnost" as dej %}
+{% url pages slug="faq" as faq %}
+{% url pages slug="dokumenti" as dok %}
+{% url pages slug="kontakti" as kon %}
+{% url projekti as projekti %}
+
+
+
+<div id="nav">
+    <ul>
+        <li><a class="{% if request.path == blog_home %}active{% endif %}" href="{{ blog_home }}">Naslovnica</a></li>
+        <li><a class="{% if request.path == o_drustvu %}active{% endif %}" href="{{ o_drustvu }}">O društvu</a></li>
+        <li><a class="{% if request.path == foto %}active{% endif %}" href="{{ foto }}">Fotogalerija</a></li>
+        <li><a class="{% if request.path == dej %}active{% endif %}" href="{{ dej }}">Dejavnost</a></li>
+        <li><a class="{% if request.path == projekti %}active{% endif %}" href="{{ projekti }}">Projekti</a></li>
+        <li><a class="{% if request.path == faq %}active{% endif %}" href="{{ faq }}">FAQ</a></li>
+        <li><a class="{% if request.path == dok %}active{% endif %}" href="{{ dok }}">Dokumenti</a></li>
+        <li><a class="{% if request.path == kon %}active{% endif %}" href="{{ kon }}">Kontakt</a></li>
+    </ul>
+</div>
+<div style="clear: both;"></div>

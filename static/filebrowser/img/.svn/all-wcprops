@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/!svn/ver/2/dsmm/static/filebrowser/img
+END
+testimage.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/2/dsmm/static/filebrowser/img/testimage.jpg
+END
+icon-pulldown-versions.png
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/2/dsmm/static/filebrowser/img/icon-pulldown-versions.png
+END
+icon-pulldown-versions-hover.png
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/2/dsmm/static/filebrowser/img/icon-pulldown-versions-hover.png
+END
+cancel.png
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/2/dsmm/static/filebrowser/img/cancel.png
+END
+cancel_hover.png
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/2/dsmm/static/filebrowser/img/cancel_hover.png
+END
+icon-pulldown-versions-active.png
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/2/dsmm/static/filebrowser/img/icon-pulldown-versions-active.png
+END

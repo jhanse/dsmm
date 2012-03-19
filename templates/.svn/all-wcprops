@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 28
+/!svn/ver/115/dsmm/templates
+END
+sponzorji.html
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/103/dsmm/templates/sponzorji.html
+END
+footer.html
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/!svn/ver/94/dsmm/templates/footer.html
+END
+navigation.html
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/93/dsmm/templates/navigation.html
+END
+test.html
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/!svn/ver/44/dsmm/templates/test.html
+END
+500.html
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/!svn/ver/110/dsmm/templates/500.html
+END
+404.html
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/!svn/ver/110/dsmm/templates/404.html
+END
+header.html
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/!svn/ver/74/dsmm/templates/header.html
+END
+base.html
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/!svn/ver/102/dsmm/templates/base.html
+END

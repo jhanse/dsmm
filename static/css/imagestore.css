@@ -1,0 +1,82 @@
+.album-list .album {
+    display: block;
+    margin: 10px 10px;
+}
+
+.album-list {
+    margin-bottom: 100px;
+}
+
+.album {
+    float:left;
+    padding: 10px;
+    border: 1px solid #f2f2f2;
+    cursor: default;
+    margin: 0 10px 10px 0;
+    border-radius: 5px;
+    -webkit-transition: background 0.5s, border-color 0.5s;
+    -moz-transition: background 0.5s, border-color 0.5s;
+}
+
+.album:hover {
+    border-color: #cccccc;
+    -webkit-transition: background 0.5s, border-color 0.5s;
+    -moz-transition: background 0.5s, border-color 0.5s;
+    background: #f7f7f7;
+}
+
+#image-thumbnails {  
+    margin: 20px 0;
+}
+
+.image-preview {
+    float: left;
+    margin: 0 5px 10px 5px;
+    border: 1px solid #a2a1a1;
+    padding:  3px 3px 0 3px;
+}
+
+.album-name {
+    width: 100%;
+    text-align: center;
+}
+
+.album-user {
+    width: 100%;
+    text-align: center;
+    font-size: 80%;
+    color: #CCC;
+}
+
+.album-head {
+    width: 140px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.album-head a {
+    text-align: center;
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+
+}
+
+.album img.preview {
+    padding: 3px;
+    border: 1px solid #a2a1a1;
+}
+
+.album-date {
+    margin-bottom: 5px;
+    font-style: italic;
+    color: #a2a1a1;
+    font-size: 12px;
+}
+
+
+.album-cat {
+    position: relative;
+    top: 10px;
+    height: 1px;
+}

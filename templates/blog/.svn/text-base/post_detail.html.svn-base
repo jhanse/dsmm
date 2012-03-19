@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load base_extras %}
+
+{% block facebook-meta %}
+    <meta property="og:title" content="{{ post.title }}" />
+    <meta property="og:url" content="http://{{ request.META.HTTP_HOST }}{{ current_path }}" />
+    <meta property="og:image" content="{% if post.image %}http://{{ request.META.HTTP_HOST }}{{ post.image.url }}{% else %}http://{{ request.META.HTTP_HOST }}{{ STATIC_PREFIX }}img/facebook_meta.png{% endif %}" />
+    <meta property="og:description" content="{{ post.body|safe|striptags|deparenthesize|truncatewords:50 }}" />
+{% endblock %}
+
+{% load comments %}
+
+{% block pagetitle %}{{ post.title }} | DŠMM{% endblock %}
+{% block title %}<h2>{{ post.title }}</h2>{% endblock %}
+
+{% block content %}
+	{% include "blog/post.html" %}
+    {% if post.is_commentable %}
+        <h3 style="margin-bottom:0;margin-top:50px;">Komentarji</h3>
+        <div class="fb-comments" data-num-posts="3" data-href="http://{{ request.META.HTTP_HOST }}{{ current_path }}" data-width="680"></div>
+    {% endif %}
+
+    <a href="/" class="novejsi back nazaj">Nazaj</a>
+{% endblock %}
+
+{% block sidebar %}
+    {% include 'sidebar/sidebar_post_detail.html' %}
+{% endblock %}

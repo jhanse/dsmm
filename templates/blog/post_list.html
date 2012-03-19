@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Aktualne novice {% if "/novice/projekti/" in request.path %}projekta{% endif %}
+{% endblock %}
+
+{% block content %}
+    {% if post_list.count %}
+        {% for post in post_list %}
+            {% include "blog/post_min.html" %}
+        {% endfor %}
+    {% else %}
+        <p>Ni prispevkov ...</p>
+    {% endif %}
+
+    {% if is_paginated %}
+		<div class="pagination">
+		    <span class="step-links">
+		        {% if page_obj.has_previous %}
+		            <a href="?page={{ page_obj.previous_page_number }}" class="novejsi">Novejše</a>
+		        {% endif %}
+                <!--
+		        <span class="current">
+		            Stran {{ page_obj.number }}/{{ page_obj.paginator.num_pages }}
+		        </span>
+                -->
+		        {% if page_obj.has_next %}
+		            <a href="?page={{ page_obj.next_page_number }}" class="starejsi">Starejše</a>
+		        {% endif %}
+		    </span>
+		</div>
+	{% endif %}
+    
+{% endblock %}
+
+{% block sidebar %}
+    {% include 'sidebar/sidebar_general.html' %}
+{% endblock %}

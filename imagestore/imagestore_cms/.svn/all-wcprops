@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/62/dsmm/imagestore/imagestore_cms
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/62/dsmm/imagestore/imagestore_cms/__init__.py
+END
+cms_app.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/62/dsmm/imagestore/imagestore_cms/cms_app.py
+END
+cms_plugins.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/62/dsmm/imagestore/imagestore_cms/cms_plugins.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/62/dsmm/imagestore/imagestore_cms/models.py
+END
+urls.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/62/dsmm/imagestore/imagestore_cms/urls.py
+END

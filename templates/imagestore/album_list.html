@@ -1,0 +1,21 @@
+{% extends "imagestore/base.html" %}
+{% load i18n %}
+
+
+{% block title %}
+        {% trans "Vsi albumi" %}
+{% endblock %}
+
+{% block content %}
+    <div class='album-list'>
+        {% for album in album_list %}
+            {% if album.get_head  or album.user == request.user %}
+                {% include 'imagestore/album.html' %}
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endblock %}
+
+{% block sidebar %}
+    {% include 'sidebar/sidebar_gallery.html' %}
+{% endblock %}

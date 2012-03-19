@@ -1,0 +1,20 @@
+{% load thumbnail %}
+
+<div class="sidebar-top">
+    <h1>Zadnje novice projekta</h1>
+</div>
+<div class="sidebar-text">
+    {% for post in posts_by %}
+        {% if forloop.counter < 6 %}
+            <div class="news-item-mini" url="{% url single_post slug=post.slug %}">
+                    <p><small>{{ post.published|date:"j. F Y" }}</small></p>
+                    <a href="{% url single_post slug=post.slug %}" class="news-item-mini-a">{{ post.title }}</a>
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
+
+<style>
+
+
+</style>

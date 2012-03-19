@@ -1,0 +1,8 @@
+<div class="sidebar-top">
+    <h1>{% block sidebar-title %} Deli z drugimi {% endblock %}</h1>
+</div>
+<div class="sidebar-text">
+    <p>Če ti je ta album všeč, ga deli s prijatelji!</p>
+    <div class="fb-like" data-send="false" data-layout="button_count" data-width="210" data-show-faces="false" data-font="arial"></div>
+    <a href="https://twitter.com/share" class="twitter-share-button" data-via="NoviceDSMM">Tweet</a>
+</div>

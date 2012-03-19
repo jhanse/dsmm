@@ -1,0 +1,48 @@
+{% url blog_home as blog_home %}
+{% url pages slug="o-drustvu" as o_drustvu %}
+{% url imagestore:index as foto%}
+{% url pages slug="dejavnost" as dej %}
+{% url pages slug="faq" as faq %}
+{% url pages slug="dokumenti" as dok %}
+{% url pages slug="kontakti" as kon %}
+{% url projekti as projekti %}
+
+<footer>
+    <div id="footer-top"></div>
+    <div id="footer-content">
+        <div class="foot col1">
+            <div id="logo-bottom">DŠMM</div>
+        </div>
+        <div class="foot col2">
+            <a target="_blank" href="http://www.facebook.com/pages/Dru%C5%A1tvo-%C5%A0tudentov-Medicine-Maribor-D%C5%A0MM/153600744737277"><div class="icon fb"></div><p>Dodaj nas na Facebook-u</p></a>
+            <div style="clear: both;height: 10px;"></div>
+            <a target="_blank" href="https://twitter.com/#!/NoviceDSMM"><div class="icon tw"></div><p>Spremljaj nas na Twitter-ju</p></a>
+        </div>
+        <div class="foot col3">
+            <ul>
+                <li><a href="{{ blog_home }}">Naslovnica</a></li>
+                <li><a href="{{ o_drustvu }}">O društvu</a></li>
+                <li><a href="{{ foto }}">Fotogalerija</a></li>
+                <li><a href="{{ dej }}">Dejavnost</a></li>
+            </ul>
+        </div>
+        <div class="foot col4">
+            <ul>
+                <li><a href="{{ projekti }}">Projekti</a></li>
+                <li><a href="{{ faq }}">FAQ</a></li>
+                <li><a href="{{ dok }}">Dokumenti</a></li>
+                <li><a href="{{ kon }}">Kontakti</a></li>
+            </ul>
+        </div>
+        <div class="foot col5">
+            <p>
+                <span>Društvo študentov medicine Maribor</span><br>
+                Slomškov trg 15<br>
+                2000 Maribor<br>
+                Slovenija
+            </p>
+        </div>
+        <div style="clear: both"></div>
+        <div id="copyright">www.medicinec.si © 2012 Vse pravice pridržane.</div>
+    </div>
+</footer>

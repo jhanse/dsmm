@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    {% get_static_prefix as STATIC_PREFIX %}
+    <title>{% block pagetitle %}Društvo študentov medicine Maribor | DŠMM{% endblock %}</title>
+    <!--META-->
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Društvo študentov medicine Maribor - združenje šudentov namenjeno obštudijskemu izobraževanju in zabavi.">
+    <meta name="keywords" content="Medicina, Maribor, Medicinska fakulteta, Društvo, Projekti, Zabava, Kultura, Znanje">
+    {% block facebook-meta %}
+        <meta property="og:title" content="Društvo študentov medicine Maribor" />
+        <meta property="og:url" content="http://{{ request.META.HTTP_HOST }}" />
+        <meta property="og:image" content="{{ STATIC_PREFIX }}img/news-default.png" />
+        <meta property="og:description" content="Društvo študentov medicine Maribor - združenje šudentov namenjeno obštudijskemu izobraževanju in zabavi." />
+    {% endblock %}
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Društvo študentov medicine Maribor" />
+    <meta property="fb:admins" content="606402070" />
+    <meta property="fb:app_id" content="375201022499206" />
+    <!--STYLES-->
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_PREFIX }}css/style.css">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_PREFIX }}css/imagestore.css">
+    <!--<link rel="stylesheet" href="{{ STATIC_PREFIX }}css/mobile.css" media="only screen and (max-device width:480px)"/>-->
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_PREFIX }}fancybox/jquery.fancybox-1.3.4.css">
+    <link rel="icon" type="image/png" href="{{ STATIC_PREFIX }}img/favicon.png" />
+    <!--JAVASCRIPT-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js?ver=3.2.1"></script>
+    <script type="text/javascript" src="{{ STATIC_PREFIX }}js/jquery.hoverIntent.minified.js"></script>
+    <script type="text/javascript" src="{{ STATIC_PREFIX }}fancybox/jquery.easing-1.3.pack.js"></script>
+    <script type="text/javascript" src="{{ STATIC_PREFIX }}js/dsmm.js"></script>
+    <script type="text/javascript" src="{{ STATIC_PREFIX }}fancybox/jquery.fancybox-1.3.4.js"></script>
+    <script type="text/javascript" src="{{ STATIC_PREFIX }}fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+    <script type="text/javascript" src="{{ STATIC_PREFIX }}js/jquery-scrolltofixed.js"></script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-29789943-1']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+<body>
+<!--JAVASCRIPT-BODY-->
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox({
+            'cyclic':true,
+            'fitToView':false,
+            autoSize:false,
+            minWidth:450,
+            width:450,
+            height:250,
+            maxWidth:450
+        });
+	});
+</script>
+{% block social-scripts %}
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/sl_SI/all.js#xfbml=1&appId=375201022499206";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+{% endblock %}
+<!--USER-LOGIN-->
+{% block login-data %}
+    <a class="admin-link" href="/admin/" target="_blank">admin</a>
+    {% if request.user.is_staff %}<div class="logged-in">Prijavljen/a kot <a href="/">{{ request.user.first_name }} {{ request.user.last_name }}</a> | <a href="/admin/logout/">Odjava</a></div>{% endif %}
+{% endblock %}
+<!--FEEDBACK-->
+<!--<div class="feedback">FEEDBACK</div>-->
+<!--HEADER-->
+{% include "header.html" %}
+<!--BODY-->
+<div id="wrapper">
+    <div id="left">
+        <!--NAVIGATION-->
+        {% include "navigation.html" %}
+        <!--CONTENT-->
+        <div id="content">
+            <div class="page-title">
+                <h2>
+                    {% block title %}Aktualne novice{% endblock %}
+                </h2>
+            </div>
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+    <!--SIDEBAR-->
+    <div id="sidebar">
+        {% block sidebar %}
+            {% include 'sidebar/sidebar_general.html' %}
+        {% endblock %}
+        <div id="sidebar-bottom"></div>
+    </div>
+    <div style="clear: both"></div>
+    <!--SPONZORJI-->
+    {% include 'sponzorji.html' %}
+</div>
+<div style="clear: both"></div>
+<!--FOOTER-->
+{% include "footer.html" %}
+<!--END-->
+</body>
+</html>

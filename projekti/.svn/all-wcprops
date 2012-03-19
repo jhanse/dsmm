@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 27
+/!svn/ver/112/dsmm/projekti
+END
+admin.py
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/!svn/ver/73/dsmm/projekti/admin.py
+END
+views.py
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/!svn/ver/112/dsmm/projekti/views.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/!svn/ver/18/dsmm/projekti/__init__.py
+END
+tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/!svn/ver/18/dsmm/projekti/tests.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/!svn/ver/60/dsmm/projekti/models.py
+END
+urls.py
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/!svn/ver/23/dsmm/projekti/urls.py
+END

@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load thumbnail %}
+{% load i18n %}
+
+{% block title %}
+    {{ projekt.ime }}
+{% endblock %}
+
+{% block content %}
+    <div class="news-item white-back">
+        <div class="projekt-podatki">
+            <p>Vodja projekta: <b>{{ projekt.vodja }}</b></p>
+            <p>Kontakt: <a href="mailto:{{ projekt.kontakt }}"><b>{{ projekt.kontakt }}</b></a></p>
+            {% if projekt.spletna_stran %}<p>Spletna stran: <a href="{{ projekt.spletna_stran }}" target="_blank"><b>{{ projekt.spletna_stran }}</b></a></p>{% endif %}
+        </div>
+        <div class="o-projektu">
+            <h3>Opis projekta</h3>
+            <p>{{ projekt.opis|safe }}</p>
+        </div>
+        {% if galerije %}
+            <div class='album-list'>
+                <h3>Fotografije</h3>
+                {% for album in galerije %}
+                    {% if album.get_head  or album.user == request.user %}
+                        {% include 'imagestore/album.html' %}
+                    {% endif %}
+                {% endfor %}
+            </div>
+            <div style="clear: both;"></div>
+        {% endif %}
+    </div>
+    <a href="/projekti/" class="novejsi">Nazaj</a>
+{% endblock %}
+
+{% block sidebar %}
+    {% if projekt.sidebar %}
+        <div class="sidebar-top">
+            <h1>{{ projekt.sidebar_title }}</h1>
+        </div>
+        <div class="sidebar-text">
+            <p>{{ projekt.sidebar|safe }}</p>
+        </div>
+    {% else %}
+        {% include 'sidebar/sidebar_projekt.html' %}
+    {% endif %}
+{% endblock %}

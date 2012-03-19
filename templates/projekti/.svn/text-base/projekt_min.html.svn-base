@@ -1,0 +1,29 @@
+{% load thumbnail %}
+{% load static %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+<div class="news-item">
+    <div class="news-pic-wrapper">
+    <div class="news-pic">
+        <a href="{% url projekt_detail slug=projekt.slug %}">
+            {% thumbnail projekt.logo "100x65" crop="0%" as im %}
+                <img src="{{ im.url }}">
+            {% empty %}
+                <img src="{{ STATIC_PREFIX }}img/news-default.png" width="100">
+            {% endthumbnail %}
+        </a>
+    </div></div>
+    <div class="news-description active-description">
+        <h3><a href="{% url projekt_detail slug=projekt.slug %}">{{ projekt.ime }}</a></h3>
+        <p class="text-min">
+            {% if projekt.kratek_opis %}
+                {{ projekt.kratek_opis }}
+            {% else %}
+                {{ projekt.opis|safe|striptags|truncatewords:30 }}
+            {% endif %}
+        </p>
+        <a href="{% url projekt_detail slug=projekt.slug %}" class="more">Več o projektu</a>
+        <div style="clear: both"></div>
+    </div>
+    <div style="clear: both"></div>
+</div>

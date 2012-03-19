@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/2/dsmm/static/grappelli/js/grappelli
+END
+jquery.grp_inline.js
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/2/dsmm/static/grappelli/js/grappelli/jquery.grp_inline.js
+END
+jquery.grp_related_fk.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/2/dsmm/static/grappelli/js/grappelli/jquery.grp_related_fk.js
+END
+jquery.grp_autocomplete_fk.js
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/2/dsmm/static/grappelli/js/grappelli/jquery.grp_autocomplete_fk.js
+END
+jquery.grp_collapsible_group.js
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/2/dsmm/static/grappelli/js/grappelli/jquery.grp_collapsible_group.js
+END
+grappelli.js
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/2/dsmm/static/grappelli/js/grappelli/grappelli.js
+END
+jquery.grp_collapsible.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/2/dsmm/static/grappelli/js/grappelli/jquery.grp_collapsible.js
+END
+jquery.grp_related_m2m.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/2/dsmm/static/grappelli/js/grappelli/jquery.grp_related_m2m.js
+END
+jquery.grp_autocomplete_m2m.js
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/2/dsmm/static/grappelli/js/grappelli/jquery.grp_autocomplete_m2m.js
+END
+jquery.grp_related_generic.js
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/2/dsmm/static/grappelli/js/grappelli/jquery.grp_related_generic.js
+END
+jquery.grp_timepicker.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/2/dsmm/static/grappelli/js/grappelli/jquery.grp_timepicker.js
+END
+jquery.grp_autocomplete_generic.js
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/2/dsmm/static/grappelli/js/grappelli/jquery.grp_autocomplete_generic.js
+END

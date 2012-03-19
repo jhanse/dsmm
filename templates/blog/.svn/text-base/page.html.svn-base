@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load thumbnail %}
+{% load static %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+{% block pagetitle %}{{ page.title }} | DŠMM{% endblock %}
+{% block title %}<h2>{{ page.title }}</h2>{% endblock %}
+
+{% block content %}
+    <div class="news-item white-back">
+            {% if page.image %}
+            <div class="news-pic">
+                <a href="{% if page.image %}{{ page.image.url }}{% endif %}" target="_blank">
+                    {% thumbnail page.image "126x85" crop="center" as im %}
+                        <img src="{{ im.url }}">
+                    {% empty %}
+                        <img src="{{ STATIC_PREFIX }}img/news-default.png" width="126">
+                    {% endthumbnail %}
+                </a>
+            </div>
+            {% endif %}
+            <div class="news-description active-description">
+                <small><i>Objavljeno {{ page.published|date:"j. F Y" }} ob {{ page.published|date:"H:i" }}</i>{% if request.user.is_staff %}<a class="edit-link" href="/admin/blog/page/{{ page.id }}" target="_blank">Uredi</a>{% endif %}</small>
+                <p>{{ page.body|safe }}</p>
+                <div style="clear: both"></div>
+            </div>
+            <div style="clear: both"></div>
+    </div>
+{% endblock %}
+
+{% block sidebar %}
+    {% if page.sidebar %}
+        <div class="sidebar-top">
+            <h1>{{ page.sidebar_title }}</h1>
+        </div>
+        <div class="sidebar-text">
+            <p>{{ page.sidebar|safe }}</p>
+        </div>
+    {% else %}
+        {% include 'sidebar/sidebar_minimal.html' %}
+    {% endif %}
+{% endblock %}

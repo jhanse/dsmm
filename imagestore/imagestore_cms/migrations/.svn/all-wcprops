@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/62/dsmm/imagestore/imagestore_cms/migrations
+END
+0001_initial.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/62/dsmm/imagestore/imagestore_cms/migrations/0001_initial.py
+END
+0003_more_carousel_options.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/62/dsmm/imagestore/imagestore_cms/migrations/0003_more_carousel_options.py
+END
+0005_auto__add_field_imagestorealbumcarousel_template_file.py
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/!svn/ver/62/dsmm/imagestore/imagestore_cms/migrations/0005_auto__add_field_imagestorealbumcarousel_template_file.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/62/dsmm/imagestore/imagestore_cms/migrations/__init__.py
+END
+0004_add_carousel_sizes.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/62/dsmm/imagestore/imagestore_cms/migrations/0004_add_carousel_sizes.py
+END
+0002_add_carusel.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/62/dsmm/imagestore/imagestore_cms/migrations/0002_add_carusel.py
+END

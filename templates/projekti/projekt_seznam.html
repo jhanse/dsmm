@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Projekti
+{% endblock %}
+
+{% block content %}
+    {% if projekt_list %}
+            {% for projekt in projekt_list %}
+                {% include "projekti/projekt_min.html" %}
+            {% endfor %}
+    {% else %}
+        <p>Ni projektov ...</p>
+    {% endif %}
+{% endblock %}
+
+{% block sidebar %}
+    {% include 'sidebar/sidebar_projekti.html' %}
+{% endblock %}

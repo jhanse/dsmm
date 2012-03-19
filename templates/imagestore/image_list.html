@@ -1,0 +1,44 @@
+{% extends "imagestore/base.html" %}
+{% load i18n %}
+{% load thumbnail %}
+{% load static %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+{% block facebook-meta %}
+    <meta property="og:title" content="{{ album.name }}" />
+    <meta property="og:url" content="http://{{ request.META.HTTP_HOST }}{{ current_path }}" />
+    <meta property="og:image" content="http://{{ request.META.HTTP_HOST }}{{ STATIC_PREFIX }}img/facebook_meta.png" />
+    <meta property="og:description" content="Fotogalerija {{ album.name }}" />
+{% endblock %}
+
+{% block title %}
+    Album: {{ album.name }}
+{% endblock %}
+
+
+{% block content %}
+    <div id="image-thumbnails">
+        {% for image in image_list %}
+            <div class='image-preview'>
+            {% thumbnail image.image "130x95" crop="center" as im %}
+                <a class="thumb fancybox" rel="fancybox" title="{{ image.title }}" href="{{ STATIC_PREFIX }}uploads/{{ image.image }}">
+                        <img class="preview" {% if image.title %} alt="{{ image.title }}" {% endif %} src="{{ im.url }}"></a>
+            {% endthumbnail %}
+            </div>
+        {% endfor %}
+    </div>
+    <div style="clear:both;"></div>
+    {% if album.is_public %}
+        <h3 style="margin-bottom:0;margin-top:50px;">Komentarji</h3>
+        <div class="fb-comments" data-num-posts="3" data-href="http://{{ request.META.HTTP_HOST }}{{ current_path }}" data-width="680"></div>
+    {% endif %}
+    <a href="/fotogalerija/" class="novejsi nazaj">Nazaj</a>
+{% endblock %}
+
+{% block sidebar %}
+    {% include 'sidebar/sidebar_gallery_like.html' %}
+{% endblock %}
+
+{% comment %}
+<a class="thumb fancybox" rel="fancybox" title="{{ image.title }}" href="{% thumbnail image.image "200" as img %}{{ img.url }}{% endthumbnail %}">
+{% endcomment %}

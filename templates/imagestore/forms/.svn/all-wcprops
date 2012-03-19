@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/61/dsmm/templates/imagestore/forms
+END
+album_form.html
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/61/dsmm/templates/imagestore/forms/album_form.html
+END
+image_form.html
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/61/dsmm/templates/imagestore/forms/image_form.html
+END

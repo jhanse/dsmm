@@ -1,0 +1,11 @@
+{% load base_extras %}
+
+<div class="sidebar-top">
+    <h1><em>Doodle</em></h1>
+</div>
+<div class="sidebar-text">
+    <a href="{{ MEDIA_PREFIX }}{% doodle_url %}" target="_blank" class="fancybox" title="{% doodle_avtor %}">
+        <img class="doodle" src="{{ MEDIA_PREFIX }}{% doodle_url %}" width="240" height="130">
+    </a>
+    <small>by {% doodle_avtor %}</small>
+</div>

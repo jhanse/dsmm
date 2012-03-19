@@ -1,0 +1,28 @@
+{% load comments %}
+{% load thumbnail %}
+{% load static %}
+{% get_static_prefix as STATIC_PREFIX %}
+{% get_comment_count for post as comment_count %}
+
+<div class="news-item white-back">
+        {% if post.image %}
+        <div class="news-pic right">
+            <a href="{% if post.image %}{{ post.image.url }}{% endif %}" class="fancybox" title="{{ post.title }}">
+            {% thumbnail post.image "190x140" crop="center" as im %}
+                <img src="{{ im.url }}">
+            {% endthumbnail %}
+            </a>
+        </div>
+        {% endif %}
+        <div class="news-description active-description">
+            <small><i>Objavljeno {{ post.published|date:"j. F Y" }} ob {{ post.published|date:"H:i" }}</i>{% if user.is_staff %}<a class="edit-link" href="/admin/blog/post/{{ post.id }}" target="_blank">Uredi</a>{% endif %} | Komentarji (<fb:comments-count href="http://{{ request.META.HTTP_HOST }}{% url single_post slug=post.slug %}"></fb:comments-count>)</small>
+            <p>{{ post.body|safe }}</p>
+            <p style="float:right;"><small>Avtor: {{ post.author.first_name|capfirst }}</small></p>
+            <div style="clear: both"></div>
+        </div>
+        <div style="clear: both"></div>
+</div>
+
+<div style="clear: both"></div>
+
+

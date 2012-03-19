@@ -1,0 +1,33 @@
+{% load thumbnail %}
+
+<div class='album'>
+    <div class="category-right album-cat">
+        <small><a href="" class="category-name">{{ album.user.first_name }}</a></small>
+        <div class="category-append"></div>
+    </div>
+    <div style="clear: both;"></div>
+    <div class='album-head' style="z-index:3;">
+            <a href="{{ album.get_absolute_url }}" style="z-index:2">
+            {% if album.get_head %}
+                {% thumbnail album.get_head.image "165x105" crop='center' as album_head %}
+                    <img style="z-index:1" class="preview" {% if album.name %} alt="{{ album.name }}" {% endif %} src="{{ album_head.url }}">
+                {% endthumbnail %}
+            {% else %}
+                ["Prazen album"]
+            {% endif %}
+            <br>
+                <div class="album-title">
+                    <span class="album-name">{{ album.name }}</span>
+                </div>
+            </a>
+    </div>
+</div>
+
+{% comment %}
+{% if not view_user and IMAGESTORE_SHOW_USER %}
+    <br>
+    <span class="album-user">
+        user: {{ album.user.username }}
+    </span>
+{% endif %}
+{% endcomment %}

@@ -1,0 +1,25 @@
+{% load thumbnail %}
+{% load static %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+<div class="news-item">
+    <div class="news-pic">
+        <a href="{% url single_post slug=post.slug %}">
+            {% thumbnail post.image "126x85" crop="center" as im %}
+                <img src="{{ im.url }}">
+            {% empty %}
+                <img src="{{ STATIC_PREFIX }}img/news-default.png" width="126">
+            {% endthumbnail %}
+        </a>
+    </div>
+    <div class="news-description">
+        <h3><a href="{% url single_post slug=post.slug %}">{{ post.title }}</a></h3><!--<small> Komentarji (<fb:comments-count href="http://{{ request.META.HTTP_HOST }}{% url single_post slug=post.slug %}"></fb:comments-count>)</small>-->
+        <div class="category-right"><small><a href="{% url novice_by_projekt post.author_id %}" class="category-name">{{ post.author.first_name }}</a></small><div class="category-append"></div></div>
+        <small style="display: block;"><i>Objavljeno {{ post.published|date:"j. F Y" }} ob {{ post.published|date:"H:i" }}</i></small>
+        <p class="text-min">{{ post.body|safe|striptags|truncatewords:45 }}</p>
+        <a href="{% url single_post slug=post.slug %}" class="more">Beri dalje</a>
+        <div style="clear: both"></div>
+    </div>
+    <div style="clear: both"></div>
+</div>
+

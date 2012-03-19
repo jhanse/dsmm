@@ -1,0 +1,9 @@
+{% load static %}
+
+<div class="sidebar-top">
+    <h1>Več kot le besede</h1>
+</div>
+<div class="sidebar-text">
+    <p>DŠMM je bil ustanovljen maja 2005 z namenom povezovanja študentov nove fakultete in razvoja obštudijskih aktivnosti.</p>
+    <p>Danes velja za bolj uspešno študentsko društvo v regiji. Povezuje vse generacije študentov, hkrati pa izvaja kvalitetne projekte za splošno populacijo.</p>
+</div>
